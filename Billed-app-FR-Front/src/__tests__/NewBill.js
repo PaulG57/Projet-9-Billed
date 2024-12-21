@@ -6,10 +6,10 @@ import { screen, fireEvent, waitFor } from "@testing-library/dom";
 import NewBillUI from "../views/NewBillUI.js";
 import NewBill from "../containers/NewBill.js";
 import { localStorageMock } from "../__mocks__/localStorage.js";
-import mockStore from "../__mocks__/store";
-import store from "../app/store";
-import {ROUTES, ROUTES_PATH } from "../constants/routes";
-import router from "../app/Router";
+import mockStore from "../__mocks__/store.js";
+import store from "../app/store.js";
+import {ROUTES, ROUTES_PATH } from "../constants/routes.js";
+import router from "../app/Router.js";
 
 jest.mock("../app/store", () => mockStore)
 
