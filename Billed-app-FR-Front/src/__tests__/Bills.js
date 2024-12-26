@@ -94,7 +94,7 @@ describe("Given I am connected as an employee", () => {
 
     describe("When an error occurs on API", () => {
       beforeEach(() => {
-        jest.spyOn(mockStore, "bills");
+        jest.spyOn(mockStore, "bills"); // Surveiller l'appel à la méthode bills
         Object.defineProperty(window, "localStorage", { value: localStorageMock });
         window.localStorage.setItem("user", JSON.stringify({ type: "Employee" }));
       });
